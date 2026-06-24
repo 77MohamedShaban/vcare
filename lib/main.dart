@@ -1,19 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vcare/v_care.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'VCare',
-      debugShowCheckedModeBanner: false,
-    );
-  }
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await ScreenUtil.ensureScreenSize();
+  runApp(const VCare());
 }
 
