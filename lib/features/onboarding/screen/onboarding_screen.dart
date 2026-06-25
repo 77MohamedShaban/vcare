@@ -30,7 +30,7 @@ class OnboardingScreen extends StatelessWidget {
                     children: [
                       Text(
                         StringsManager.manageAndSchedule,
-                        style: TextStyles.font14regularGray,
+                        style: TextStyles.font14GrayRegular,
                         textAlign: TextAlign.center,
                       ),
                       MainBtn(

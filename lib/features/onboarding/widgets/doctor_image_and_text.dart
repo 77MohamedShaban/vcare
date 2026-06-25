@@ -30,7 +30,7 @@ class DoctorImageAndText extends StatelessWidget {
           left: 0,
           child: Text(
             StringsManager.bestDoctorAppointmentApp,
-            style: TextStyles.font32BoldBlue.copyWith(height: 1.4),
+            style: TextStyles.font32BlueBold.copyWith(height: 1.4),
             textAlign: .center,
           ),
         ),

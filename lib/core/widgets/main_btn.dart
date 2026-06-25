@@ -6,22 +6,25 @@ import '../theming/text_styles.dart';
 
 class MainBtn extends StatelessWidget {
   final String text;
-  final void Function()? onClick;
+  final Color? backgroundColor;
+  final double? btnWidth;
+  final double? btnHeight;
+  final void Function() onClick;
 
-  const MainBtn({super.key, required this.text, this.onClick});
+  const MainBtn({super.key, required this.text, required this.onClick, this.backgroundColor, this.btnWidth, this.btnHeight});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: ColorsManager.mainBlue,
+        backgroundColor: backgroundColor?? ColorsManager.mainBlue,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.r),
         ),
-        minimumSize: Size.fromHeight(55.h),
+        minimumSize: Size(btnWidth?.w ?? double.infinity, btnHeight?.h ?? 50.h),
       ),
       onPressed: onClick,
-      child: Text(text, style: TextStyles.font16white600w),
+      child: Text(text, style: TextStyles.font16whiteSemiBold),
     );
   }
 }
