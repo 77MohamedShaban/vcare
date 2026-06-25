@@ -15,7 +15,7 @@ class LogoAndName extends StatelessWidget {
       mainAxisAlignment: .center,
       spacing: 10.w,
       children: [SvgPicture.asset(AssetsManager.vcareLogo),
-        Text(StringsManager.vcare,style: TextStyles.font24Black700Weight,)],
+        Text(StringsManager.vcare,style: TextStyles.font24BlackBold,)],
     );
   }
 }
