@@ -19,6 +19,7 @@ class RoutesManager {
           child: const LoginScreen(),
           type: PageTransitionType.fade,
         );
+
       default:
         return PageTransition(
           child: const Scaffold(body: Center(child: Text("No Route Found"))),

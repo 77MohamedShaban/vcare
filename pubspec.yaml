@@ -60,6 +60,8 @@ dependencies:
   flutter_screenutil: ^5.9.3
   # For animations and transitions
   page_transition: ^2.2.2
+  # For launcher icon
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
@@ -114,3 +116,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon_launcher.png"
